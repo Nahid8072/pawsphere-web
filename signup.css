@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #4a4a4a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-header {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 0 4px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    height: 650px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner Styling */
+.banner-section {
+    flex: 1;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+.banner-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 70%);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 320px;
+    color: #222222;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.spotlight-title {
+    font-size: 10px;
+    font-weight: 700;
+    color: #006838;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.spotlight-quote {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 14px;
+    font-style: italic;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.user-info span {
+    font-size: 8px;
+    font-weight: 700;
+    color: #777777;
+    letter-spacing: 0.4px;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-paw {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 160px;
+    color: #eaeaea;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    z-index: 2;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #006838;
+    margin-bottom: 12px;
+}
+
+.brand-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #006838;
+    color: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.form-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.form-header p {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 5px;
+}
+
+.optional {
+    color: #999999;
+    font-weight: 400;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: #999999;
+    font-size: 13px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 14px 10px 38px;
+    background: #f3f3f3;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #333333;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.no-icon input {
+    padding-left: 14px;
+}
+
+input:focus {
+    background: #ffffff;
+    border-color: #006838;
+    box-shadow: 0 0 0 3px rgba(0, 104, 56, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 11px;
+    background: #006838;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #00522c;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 18px 0;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+.divider span {
+    position: relative;
+    background: #fafafa;
+    padding: 0 10px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #999999;
+    letter-spacing: 0.5px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-social:hover {
+    background: #f5f5f5;
+}
+
+.form-footer {
+    text-align: center;
+    font-size: 11px;
+    color: #666666;
+}
+
+.form-footer a {
+    color: #006838;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.legal-links {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.legal-links a {
+    color: #888888;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
