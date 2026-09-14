@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "petName": "Biscuit",
+    "owner": "Rafiqul Islam",
+    "breed": "Golden Retriever",
+    "age": "8 months",
+    "lastVisit": "Jul 15, 2024",
+    "nextVisit": "Jul 30, 2024",
+    "status": "Active",
+    "conditions": ["Healthy"],
+    "image": "https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=100&h=100&fit=crop&auto=format"
+  },
+  {
+    "id": 2,
+    "petName": "Luna",
+    "owner": "Nadia Sultana",
+    "breed": "Tabby Cat",
+    "age": "1 year",
+    "lastVisit": "Jul 10, 2024",
+    "nextVisit": "Aug 10, 2024",
+    "status": "Follow-up",
+    "conditions": ["Dermatitis"],
+    "image": "https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?w=100&h=100&fit=crop&auto=format"
+  },
+  {
+    "id": 3,
+    "petName": "Bruno",
+    "owner": "Karim Uddin",
+    "breed": "German Shepherd",
+    "age": "3 years",
+    "lastVisit": "Jun 20, 2024",
+    "nextVisit": "Aug 20, 2024",
+    "status": "Active",
+    "conditions": ["Hip Dysplasia"],
+    "image": "https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=100&h=100&fit=crop&auto=format"
+  }
+]

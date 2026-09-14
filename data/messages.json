@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "from": "Dhaka Animal Rescue",
+    "avatar": "DA",
+    "role": "Shelter",
+    "lastMessage": "Your application for Biscuit has been reviewed.",
+    "time": "10:30 AM",
+    "unread": 2,
+    "messages": [
+      {
+        "id": 1,
+        "sender": "them",
+        "text": "Hello! We received your adoption application for Biscuit.",
+        "time": "10:00 AM"
+      },
+      {
+        "id": 2,
+        "sender": "me",
+        "text": "Great! When can we schedule a meet and greet?",
+        "time": "10:15 AM"
+      },
+      {
+        "id": 3,
+        "sender": "them",
+        "text": "Your application for Biscuit has been reviewed.",
+        "time": "10:30 AM"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "from": "Dr. Ariful Haque",
+    "avatar": "AH",
+    "role": "Veterinarian",
+    "lastMessage": "Please give Biscuit 2 tablets daily for a week.",
+    "time": "Yesterday",
+    "unread": 0,
+    "messages": [
+      {
+        "id": 1,
+        "sender": "them",
+        "text": "Your appointment is confirmed for tomorrow at 3 PM.",
+        "time": "9:00 AM"
+      },
+      {
+        "id": 2,
+        "sender": "me",
+        "text": "Thank you, doctor!",
+        "time": "9:05 AM"
+      },
+      {
+        "id": 3,
+        "sender": "them",
+        "text": "Please give Biscuit 2 tablets daily for a week.",
+        "time": "Yesterday"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "from": "Sylhet Paws Foundation",
+    "avatar": "SP",
+    "role": "Shelter",
+    "lastMessage": "Oreo is doing great, looking forward to your visit!",
+    "time": "2 days ago",
+    "unread": 1,
+    "messages": [
+      {
+        "id": 1,
+        "sender": "them",
+        "text": "Oreo is doing great, looking forward to your visit!",
+        "time": "2 days ago"
+      }
+    ]
+  }
+]

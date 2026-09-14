@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ariful Haque",
+    "specialty": "General Practitioner",
+    "clinic": "Dhaka Pet Clinic",
+    "location": "Dhanmondi, Dhaka",
+    "rating": 4.9,
+    "reviews": 128,
+    "experience": "12 years",
+    "fee": 800,
+    "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&auto=format",
+    "nextSlot": "Today, 3:00 PM",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Dr. Fatima Begum",
+    "specialty": "Veterinary Surgeon",
+    "clinic": "Chittagong Animal Hospital",
+    "location": "Nasirabad, Chittagong",
+    "rating": 4.8,
+    "reviews": 96,
+    "experience": "9 years",
+    "fee": 1000,
+    "image": "https://images.unsplash.com/photo-1581841064838-a470c740e8ee?w=200&h=200&fit=crop&auto=format",
+    "nextSlot": "Tomorrow, 10:00 AM",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Dr. Rezaul Karim",
+    "specialty": "Dermatologist",
+    "clinic": "Sylhet Pet Care",
+    "location": "Zindabazar, Sylhet",
+    "rating": 4.7,
+    "reviews": 64,
+    "experience": "7 years",
+    "fee": 700,
+    "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&auto=format",
+    "nextSlot": "Today, 5:30 PM",
+    "available": false
+  }
+]

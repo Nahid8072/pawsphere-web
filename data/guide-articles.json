@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "First Week with Your New Dog",
+    "category": "Dogs",
+    "readTime": "5 min",
+    "image": "https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=400&h=200&fit=crop&auto=format"
+  },
+  {
+    "id": 2,
+    "title": "Essential Cat Care Guide",
+    "category": "Cats",
+    "readTime": "7 min",
+    "image": "https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?w=400&h=200&fit=crop&auto=format"
+  },
+  {
+    "id": 3,
+    "title": "Vaccination Schedule for Pets",
+    "category": "Health",
+    "readTime": "4 min",
+    "image": "https://images.unsplash.com/photo-1770836037793-95bdbf190f71?w=400&h=200&fit=crop&auto=format"
+  },
+  {
+    "id": 4,
+    "title": "Nutrition Tips for Young Puppies",
+    "category": "Dogs",
+    "readTime": "6 min",
+    "image": "https://images.unsplash.com/photo-1629740067905-bd3f515aa739?w=400&h=200&fit=crop&auto=format"
+  }
+]

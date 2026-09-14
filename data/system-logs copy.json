@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "event": "User login",
+    "user": "rafiq@email.com",
+    "ip": "103.121.45.2",
+    "time": "Jul 30, 2024 10:02 AM",
+    "level": "Info"
+  },
+  {
+    "id": 2,
+    "event": "Pet listing created",
+    "user": "dar@email.com",
+    "ip": "103.121.45.8",
+    "time": "Jul 30, 2024 9:45 AM",
+    "level": "Info"
+  },
+  {
+    "id": 3,
+    "event": "Failed login attempt",
+    "user": "unknown",
+    "ip": "192.168.1.1",
+    "time": "Jul 30, 2024 9:10 AM",
+    "level": "Warning"
+  },
+  {
+    "id": 4,
+    "event": "Adoption approved",
+    "user": "dar@email.com",
+    "ip": "103.121.45.8",
+    "time": "Jul 29, 2024 4:30 PM",
+    "level": "Info"
+  },
+  {
+    "id": 5,
+    "event": "Account suspended",
+    "user": "admin@pawsphere.bd",
+    "ip": "10.0.0.1",
+    "time": "Jul 29, 2024 2:15 PM",
+    "level": "Critical"
+  }
+]
