@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Vet — PawSphere</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon">P</div>
+        <span class="sidebar-brand-text">PawSphere</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="browse-pets.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Browse Pets</span>
+        </a>
+        <a href="find-vet.html" class="nav-link active">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+          <span>Find Vet</span>
+        </a>
+        <a href="adoption.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+          <span>Adoption</span>
+        </a>
+        <a href="my-pets.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+          <span>My Pets</span>
+        </a>
+        <a href="appointments.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          <span>Appointments</span>
+        </a>
+        <a href="messages.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Messages</span>
+        </a>
+        <a href="notifications.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span>Notifications</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+          <span>Favorites</span>
+        </a>
+        <a href="guide.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span>Pet Care Guide</span>
+        </a>
+        <a href="settings.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="user-avatar">RI</div>
+          <div class="user-info">
+            <p class="user-name">Rafiqul Islam</p>
+            <p class="user-role">Pet Owner</p>
+          </div>
+        </div>
+        <a href="../../index.html" class="signout-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--muted-subtle)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-actions">
+          <a href="notifications.html" class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></a>
+          <a href="messages.html" class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+          <div class="user-avatar">RI</div>
+        </div>
+      </header>
+
+      <main class="content-area">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Find a Vet</h1>
+            <p class="page-subtitle">Book appointments with verified veterinarians</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 mb-6">
+          <div class="topbar-search" style="max-width: none; background: #ffffff;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--muted-subtle)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" placeholder="Search by name or specialty...">
+          </div>
+          <select class="form-select" style="width: auto; padding: 0.5rem 1rem;">
+            <option>All Specialties</option>
+            <option>General Practitioner</option>
+            <option>Veterinary Surgeon</option>
+            <option>Dermatologist</option>
+          </select>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Vet 1 -->
+          <div class="card flex items-start gap-5 card-hover">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&auto=format" alt="Dr. Ariful Haque" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; background-color: var(--muted); flex-shrink: 0;">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h3 style="font-size: 1rem; font-weight: 600; color: var(--foreground);">Dr. Ariful Haque</h3>
+                <span class="verification-badge">Verified vet</span>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">General Practitioner · Dhaka Pet Clinic</p>
+              <div class="flex items-center gap-4 text-xs mb-3" style="color: var(--muted-subtle);">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Dhanmondi, Dhaka
+                </span>
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  12 years exp.
+                </span>
+                <span class="flex items-center gap-1" style="color: #f59e0b;">
+                  ★ 4.9 (128 reviews)
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="badge badge-approved">Next: Today, 3:00 PM</span>
+                <span style="font-size: 0.75rem; color: var(--muted-foreground);">Fee: ৳800</span>
+              </div>
+            </div>
+            <a href="appointments.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <!-- Vet 2 -->
+          <div class="card flex items-start gap-5 card-hover">
+            <img src="https://images.unsplash.com/photo-1581841064838-a470c740e8ee?w=200&h=200&fit=crop&auto=format" alt="Dr. Fatima Begum" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; background-color: var(--muted); flex-shrink: 0;">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h3 style="font-size: 1rem; font-weight: 600; color: var(--foreground);">Dr. Fatima Begum</h3>
+                <span class="verification-badge">Verified vet</span>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Veterinary Surgeon · Chittagong Animal Hospital</p>
+              <div class="flex items-center gap-4 text-xs mb-3" style="color: var(--muted-subtle);">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Nasirabad, Chittagong
+                </span>
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  9 years exp.
+                </span>
+                <span class="flex items-center gap-1" style="color: #f59e0b;">
+                  ★ 4.8 (96 reviews)
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="badge badge-approved">Next: Tomorrow, 10:00 AM</span>
+                <span style="font-size: 0.75rem; color: var(--muted-foreground);">Fee: ৳1000</span>
+              </div>
+            </div>
+            <a href="appointments.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <!-- Vet 3 -->
+          <div class="card flex items-start gap-5 card-hover">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&auto=format" alt="Dr. Rezaul Karim" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; background-color: var(--muted); flex-shrink: 0;">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <h3 style="font-size: 1rem; font-weight: 600; color: var(--foreground);">Dr. Rezaul Karim</h3>
+                <span class="verification-badge">Verified vet</span>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 0.25rem;">Dermatologist · Sylhet Pet Care</p>
+              <div class="flex items-center gap-4 text-xs mb-3" style="color: var(--muted-subtle);">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Zindabazar, Sylhet
+                </span>
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  7 years exp.
+                </span>
+                <span class="flex items-center gap-1" style="color: #f59e0b;">
+                  ★ 4.7 (64 reviews)
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="badge badge-reserved">Next: Today, 5:30 PM</span>
+                <span style="font-size: 0.75rem; color: var(--muted-foreground);">Fee: ৳700</span>
+              </div>
+            </div>
+            <button class="btn btn-sm" disabled style="background-color: var(--muted); color: var(--muted-subtle);">Unavailable</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
