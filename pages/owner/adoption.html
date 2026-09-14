@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Applications — PawSphere</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon">P</div>
+        <span class="sidebar-brand-text">PawSphere</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="browse-pets.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Browse Pets</span>
+        </a>
+        <a href="find-vet.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+          <span>Find Vet</span>
+        </a>
+        <a href="adoption.html" class="nav-link active">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+          <span>Adoption</span>
+        </a>
+        <a href="my-pets.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+          <span>My Pets</span>
+        </a>
+        <a href="appointments.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          <span>Appointments</span>
+        </a>
+        <a href="messages.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Messages</span>
+        </a>
+        <a href="notifications.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span>Notifications</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+          <span>Favorites</span>
+        </a>
+        <a href="guide.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span>Pet Care Guide</span>
+        </a>
+        <a href="settings.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="user-avatar">RI</div>
+          <div class="user-info">
+            <p class="user-name">Rafiqul Islam</p>
+            <p class="user-role">Pet Owner</p>
+          </div>
+        </div>
+        <a href="../../index.html" class="signout-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--muted-subtle)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-actions">
+          <a href="notifications.html" class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></a>
+          <a href="messages.html" class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+          <div class="user-avatar">RI</div>
+        </div>
+      </header>
+
+      <main class="content-area">
+        <div class="breadcrumbs">
+          <a href="adoption.html">Applications</a>
+          <span>›</span>
+          <span class="current">My applications</span>
+        </div>
+
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Adoption Applications</h1>
+            <p class="page-subtitle">Track your adoption journey</p>
+          </div>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="flex gap-2 mb-6">
+          <button class="btn btn-primary btn-sm">All</button>
+          <button class="btn btn-outline-neutral btn-sm">Pending</button>
+          <button class="btn btn-outline-neutral btn-sm">Approved</button>
+          <button class="btn btn-outline-neutral btn-sm">Completed</button>
+        </div>
+
+        <div class="space-y-4">
+          <!-- App 1: Biscuit -->
+          <div class="card">
+            <div class="flex items-center gap-4 mb-5">
+              <img src="https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=100&h=100&fit=crop&auto=format" alt="Biscuit" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <h3 style="font-size: 1rem; font-weight: 600;">Biscuit</h3>
+                  <span class="badge badge-interview">Interview</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Dhaka Animal Rescue · Applied Jul 20, 2024</p>
+              </div>
+              <a href="pet-detail.html" class="btn btn-outline btn-sm">View Details</a>
+            </div>
+
+            <!-- Steps: Submitted (done), Review (done), Interview (current), Approved, Meet & Greet, Completed -->
+            <div class="stepper">
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Submitted</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Review</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle current">3</div>
+                  <p class="step-label">Interview</p>
+                </div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle">4</div>
+                  <p class="step-label">Approved</p>
+                </div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle">5</div>
+                  <p class="step-label">Meet & Greet</p>
+                </div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle">6</div>
+                  <p class="step-label">Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- App 2: Luna -->
+          <div class="card">
+            <div class="flex items-center gap-4 mb-5">
+              <img src="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?w=100&h=100&fit=crop&auto=format" alt="Luna" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <h3 style="font-size: 1rem; font-weight: 600;">Luna</h3>
+                  <span class="badge badge-approved">Approved</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Chittagong Pet Shelter · Applied Jul 10, 2024</p>
+              </div>
+              <button class="btn btn-outline btn-sm">View Details</button>
+            </div>
+
+            <div class="stepper">
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Submitted</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Review</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Interview</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle current">4</div>
+                  <p class="step-label">Approved</p>
+                </div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle">5</div>
+                  <p class="step-label">Meet & Greet</p>
+                </div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle">6</div>
+                  <p class="step-label">Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- App 3: Bruno -->
+          <div class="card">
+            <div class="flex items-center gap-4 mb-5">
+              <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=100&h=100&fit=crop&auto=format" alt="Bruno" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <h3 style="font-size: 1rem; font-weight: 600;">Bruno</h3>
+                  <span class="badge badge-completed">Completed</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Rajshahi Animal Care · Applied Jun 28, 2024</p>
+              </div>
+              <button class="btn btn-outline btn-sm">View Details</button>
+            </div>
+
+            <div class="stepper">
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Submitted</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Review</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Interview</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Approved</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Meet & Greet</p>
+                </div>
+                <div class="step-line done"></div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle-col">
+                  <div class="step-circle done">✓</div>
+                  <p class="step-label">Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
