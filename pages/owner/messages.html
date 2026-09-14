@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages — PawSphere</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand-icon">P</div>
+        <span class="sidebar-brand-text">PawSphere</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="browse-pets.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Browse Pets</span>
+        </a>
+        <a href="find-vet.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+          <span>Find Vet</span>
+        </a>
+        <a href="adoption.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+          <span>Adoption</span>
+        </a>
+        <a href="my-pets.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+          <span>My Pets</span>
+        </a>
+        <a href="appointments.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          <span>Appointments</span>
+        </a>
+        <a href="messages.html" class="nav-link active">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Messages</span>
+        </a>
+        <a href="notifications.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          <span>Notifications</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+          <span>Favorites</span>
+        </a>
+        <a href="guide.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span>Pet Care Guide</span>
+        </a>
+        <a href="settings.html" class="nav-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="user-avatar">RI</div>
+          <div class="user-info">
+            <p class="user-name">Rafiqul Islam</p>
+            <p class="user-role">Pet Owner</p>
+          </div>
+        </div>
+        <a href="../../index.html" class="signout-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--muted-subtle)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-actions">
+          <a href="notifications.html" class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></a>
+          <a href="messages.html" class="icon-btn active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+          <div class="user-avatar">RI</div>
+        </div>
+      </header>
+
+      <main class="content-area">
+        <div class="page-header">
+          <h1 class="page-title">Messages</h1>
+        </div>
+
+        <div class="chat-container">
+          <!-- Left thread list -->
+          <div class="chat-sidebar">
+            <div style="padding: 0.75rem; border-bottom: 1px solid var(--border);">
+              <div class="topbar-search" style="max-width: none;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--muted-subtle)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" placeholder="Search...">
+              </div>
+            </div>
+
+            <div class="chat-thread-list">
+              <div class="chat-thread-item active">
+                <div class="user-avatar" style="width: 36px; height: 36px; font-size: 0.6875rem;">DA</div>
+                <div style="flex: 1; min-width: 0;">
+                  <div class="flex items-center justify-between">
+                    <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dhaka Animal Rescue</p>
+                    <span style="font-size: 0.6875rem; color: var(--muted-subtle);">10:30 AM</span>
+                  </div>
+                  <p style="font-size: 0.75rem; color: var(--muted-foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Your application for Biscuit has been reviewed.</p>
+                </div>
+                <span style="width: 1rem; height: 1rem; border-radius: 50%; background: var(--primary); color: #fff; font-size: 0.625rem; display: flex; align-items: center; justify-content: center; margin-top: 2px;">2</span>
+              </div>
+
+              <div class="chat-thread-item">
+                <div class="user-avatar" style="width: 36px; height: 36px; font-size: 0.6875rem;">AH</div>
+                <div style="flex: 1; min-width: 0;">
+                  <div class="flex items-center justify-between">
+                    <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dr. Ariful Haque</p>
+                    <span style="font-size: 0.6875rem; color: var(--muted-subtle);">Yesterday</span>
+                  </div>
+                  <p style="font-size: 0.75rem; color: var(--muted-foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Please give Biscuit 2 tablets daily for a week.</p>
+                </div>
+              </div>
+
+              <div class="chat-thread-item">
+                <div class="user-avatar" style="width: 36px; height: 36px; font-size: 0.6875rem;">SP</div>
+                <div style="flex: 1; min-width: 0;">
+                  <div class="flex items-center justify-between">
+                    <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Sylhet Paws Foundation</p>
+                    <span style="font-size: 0.6875rem; color: var(--muted-subtle);">2d ago</span>
+                  </div>
+                  <p style="font-size: 0.75rem; color: var(--muted-foreground); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Oreo is doing great, looking forward to your visit!</p>
+                </div>
+                <span style="width: 1rem; height: 1rem; border-radius: 50%; background: var(--primary); color: #fff; font-size: 0.625rem; display: flex; align-items: center; justify-content: center; margin-top: 2px;">1</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Conversation Area -->
+          <div class="chat-main">
+            <div class="chat-header">
+              <div class="user-avatar" style="width: 36px; height: 36px;">DA</div>
+              <div style="flex: 1; min-width: 0;">
+                <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Dhaka Animal Rescue</p>
+                <p class="flex items-center gap-1.5" style="font-size: 0.6875rem; color: var(--muted-foreground);">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background-color: var(--primary);"></span>
+                  Online · Shelter
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button class="btn btn-outline-neutral btn-sm" title="Voice Call">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </button>
+                <button class="btn btn-primary btn-sm" title="Video Call">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect width="15" height="14" x="1" y="5" rx="2" ry="2"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Messages Thread -->
+            <div class="chat-messages">
+              <div class="chat-bubble-wrap them">
+                <div class="chat-bubble them">
+                  <p>Hello! We received your adoption application for Biscuit.</p>
+                  <p class="chat-time">10:00 AM</p>
+                </div>
+              </div>
+
+              <div class="chat-bubble-wrap me">
+                <div class="chat-bubble me">
+                  <p>Great! When can we schedule a meet and greet?</p>
+                  <p class="chat-time">10:15 AM</p>
+                </div>
+              </div>
+
+              <div class="chat-bubble-wrap them">
+                <div class="chat-bubble them">
+                  <p>Your application for Biscuit has been reviewed.</p>
+                  <p class="chat-time">10:30 AM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat input bar -->
+            <div class="chat-input-bar">
+              <input type="text" placeholder="Type a message..." class="form-input" style="flex: 1;">
+              <button class="btn btn-primary" style="width: 36px; height: 36px; padding: 0;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

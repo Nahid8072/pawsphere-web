@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "text": "Your adoption application for Biscuit has moved to Interview stage.",
+    "time": "10 min ago",
+    "read": false,
+    "type": "adoption"
+  },
+  {
+    "id": 2,
+    "text": "Appointment with Dr. Ariful Haque confirmed for Jul 30 at 3:00 PM.",
+    "time": "1 hour ago",
+    "read": false,
+    "type": "appointment"
+  },
+  {
+    "id": 3,
+    "text": "Biscuit's vaccination is due in 7 days.",
+    "time": "3 hours ago",
+    "read": false,
+    "type": "vaccine"
+  },
+  {
+    "id": 4,
+    "text": "New message from Dhaka Animal Rescue.",
+    "time": "Yesterday",
+    "read": true,
+    "type": "message"
+  },
+  {
+    "id": 5,
+    "text": "Your application for Luna has been approved!",
+    "time": "2 days ago",
+    "read": true,
+    "type": "adoption"
+  }
+]
