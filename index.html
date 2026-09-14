@@ -1,13 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawsphere</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawSphere — Bangladesh's #1 Pet Platform</title>
+  <meta name="description" content="Connect with shelters, find your perfect companion, and access professional veterinary care all in one place.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .hero-img-1 {
+      border-radius: 18px;
+      height: 280px;
+      width: 100%;
+      object-fit: cover;
+      margin-top: 2rem;
+    }
+    .hero-img-2 {
+      border-radius: 18px;
+      height: 280px;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <!-- Navbar -->
+  <nav class="public-nav">
+    <div class="public-nav-inner">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="sidebar-brand-icon">P</div>
+        <span class="sidebar-brand-text">PawSphere</span>
+      </a>
+      
+      <div class="public-nav-links">
+        <a href="pages/browse-pets.html">Browse Pets</a>
+        <a href="#how">How It Works</a>
+        <a href="#services">Vet Services</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="pages/login.html" class="btn btn-outline-neutral btn-sm">Sign In</a>
+        <a href="pages/register.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="padding-top: 100px; padding-bottom: 5rem;">
+    <div class="container">
+      <div class="grid grid-cols-2 gap-8 items-center" style="grid-template-columns: 1.2fr 1fr;">
+        <div>
+          <span style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; background-color: var(--primary-light); padding: 0.375rem 0.75rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background-color: var(--primary);"></span>
+            Bangladesh's #1 Pet Platform
+          </span>
+
+          <h1 style="font-size: 3rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 1.25rem;">
+            Every pet deserves<br>
+            <span style="color: var(--primary);">a loving home.</span>
+          </h1>
+
+          <p style="font-size: 1.125rem; line-height: 1.6; margin-bottom: 2rem; max-width: 440px;">
+            Connect with shelters, find your perfect companion, and access professional veterinary care — all in one place.
+          </p>
+
+          <div class="flex items-center gap-3 mb-6">
+            <a href="pages/browse-pets.html" class="btn btn-primary btn-lg">Browse Pets</a>
+            <a href="pages/login.html" class="btn btn-outline-neutral btn-lg">Sign In</a>
+          </div>
+
+          <div class="flex items-center gap-2" style="flex-wrap: wrap;">
+            <span style="font-size: 0.75rem; color: var(--muted-subtle);">Popular:</span>
+            <a href="pages/browse-pets.html" class="btn btn-outline-neutral btn-xs" style="border-radius: var(--radius-full);">Dogs</a>
+            <a href="pages/browse-pets.html" class="btn btn-outline-neutral btn-xs" style="border-radius: var(--radius-full);">Cats</a>
+            <a href="pages/browse-pets.html" class="btn btn-outline-neutral btn-xs" style="border-radius: var(--radius-full);">Puppies</a>
+            <a href="pages/browse-pets.html" class="btn btn-outline-neutral btn-xs" style="border-radius: var(--radius-full);">Kittens</a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 hidden-lg">
+          <img src="https://images.unsplash.com/photo-1629740067905-bd3f515aa739?w=400&h=500&fit=crop&auto=format" alt="Puppy" class="hero-img-1">
+          <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=400&h=500&fit=crop&auto=format" alt="Kitten" class="hero-img-2">
+        </div>
+      </div>
+
+      <!-- Hero Stats Bar -->
+      <div class="grid grid-cols-4 gap-6" style="margin-top: 3.5rem; border-top: 1px solid var(--border); padding-top: 2.5rem;">
+        <div>
+          <p style="font-size: 1.75rem; font-weight: 700; color: var(--foreground);">4,800+</p>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-top: 0.125rem;">Pets Adopted</p>
+        </div>
+        <div>
+          <p style="font-size: 1.75rem; font-weight: 700; color: var(--foreground);">120+</p>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-top: 0.125rem;">Partner Shelters</p>
+        </div>
+        <div>
+          <p style="font-size: 1.75rem; font-weight: 700; color: var(--foreground);">340+</p>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-top: 0.125rem;">Verified Vets</p>
+        </div>
+        <div>
+          <p style="font-size: 1.75rem; font-weight: 700; color: var(--foreground);">98%</p>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-top: 0.125rem;">Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Pets -->
+  <section style="padding: 4rem 0; background-color: #ffffff;">
+    <div class="container">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); margin-bottom: 0.5rem;">Available Now</p>
+          <h2 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;">Featured Pets</h2>
+        </div>
+        <a href="pages/browse-pets.html" style="display: flex; align-items: center; gap: 0.375rem; font-size: 0.875rem; font-weight: 600; color: var(--primary);">
+          View all pets
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-4 gap-5">
+        <!-- Pet 1 -->
+        <div class="pet-card">
+          <div class="pet-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=600&h=600&fit=crop&auto=format" alt="Biscuit">
+            <span class="pet-card-tag">Playful</span>
+            <div class="pet-card-heart">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+          </div>
+          <div class="pet-card-body">
+            <div class="flex items-center justify-between mb-1">
+              <h3 style="font-size: 1rem; font-weight: 600;">Biscuit</h3>
+              <span class="badge badge-approved">Vaccinated</span>
+            </div>
+            <p style="font-size: 0.875rem; margin-bottom: 0.25rem;">Golden Retriever</p>
+            <p style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 0.75rem;">8 months · Male</p>
+            <div class="flex items-center gap-1" style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 1rem;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              Mirpur, Dhaka
+            </div>
+            <a href="pages/pet-detail.html" class="btn btn-outline btn-block btn-sm">Adopt Biscuit</a>
+          </div>
+        </div>
+
+        <!-- Pet 2 -->
+        <div class="pet-card">
+          <div class="pet-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?w=600&h=600&fit=crop&auto=format" alt="Luna">
+            <span class="pet-card-tag">Gentle</span>
+            <div class="pet-card-heart">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+          </div>
+          <div class="pet-card-body">
+            <div class="flex items-center justify-between mb-1">
+              <h3 style="font-size: 1rem; font-weight: 600;">Luna</h3>
+              <span class="badge badge-approved">Vaccinated</span>
+            </div>
+            <p style="font-size: 0.875rem; margin-bottom: 0.25rem;">Tabby Cat</p>
+            <p style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 0.75rem;">1 year · Female</p>
+            <div class="flex items-center gap-1" style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 1rem;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              Nasirabad, Chittagong
+            </div>
+            <a href="pages/pet-detail.html" class="btn btn-outline btn-block btn-sm">Adopt Luna</a>
+          </div>
+        </div>
+
+        <!-- Pet 3 -->
+        <div class="pet-card">
+          <div class="pet-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1602979677071-1781b7f40023?w=600&h=600&fit=crop&auto=format" alt="Oreo">
+            <span class="pet-card-tag">Calm</span>
+            <div class="pet-card-heart">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+          </div>
+          <div class="pet-card-body">
+            <div class="flex items-center justify-between mb-1">
+              <h3 style="font-size: 1rem; font-weight: 600;">Oreo</h3>
+              <span class="badge badge-reserved">Reserved</span>
+            </div>
+            <p style="font-size: 0.875rem; margin-bottom: 0.25rem;">Bernese Mountain Dog</p>
+            <p style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 0.75rem;">2 years · Male</p>
+            <div class="flex items-center gap-1" style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 1rem;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              Zindabazar, Sylhet
+            </div>
+            <a href="pages/pet-detail.html" class="btn btn-outline btn-block btn-sm">Adopt Oreo</a>
+          </div>
+        </div>
+
+        <!-- Pet 4 -->
+        <div class="pet-card">
+          <div class="pet-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=600&h=600&fit=crop&auto=format" alt="Mochi">
+            <span class="pet-card-tag">Curious</span>
+            <div class="pet-card-heart">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+          </div>
+          <div class="pet-card-body">
+            <div class="flex items-center justify-between mb-1">
+              <h3 style="font-size: 1rem; font-weight: 600;">Mochi</h3>
+              <span class="badge badge-approved">Vaccinated</span>
+            </div>
+            <p style="font-size: 0.875rem; margin-bottom: 0.25rem;">Persian Cat</p>
+            <p style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 0.75rem;">6 months · Female</p>
+            <div class="flex items-center gap-1" style="font-size: 0.75rem; color: var(--muted-subtle); margin-bottom: 1rem;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              Gulshan, Dhaka
+            </div>
+            <a href="pages/pet-detail.html" class="btn btn-outline btn-block btn-sm">Adopt Mochi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Adoption Works -->
+  <section id="how" style="padding: 4rem 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); margin-bottom: 0.5rem;">Simple Process</p>
+        <h2 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;">How Adoption Works</h2>
+      </div>
+
+      <div class="grid grid-cols-4 gap-5">
+        <div class="card card-xl">
+          <span style="font-size: 2rem; font-weight: 700; color: var(--border); display: block; margin-bottom: 1rem;">01</span>
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Browse & Find</h3>
+          <p style="font-size: 0.875rem; line-height: 1.6;">Search through hundreds of loving pets. Filter by breed, age, and location.</p>
+        </div>
+
+        <div class="card card-xl">
+          <span style="font-size: 2rem; font-weight: 700; color: var(--border); display: block; margin-bottom: 1rem;">02</span>
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Apply Online</h3>
+          <p style="font-size: 0.875rem; line-height: 1.6;">Submit your adoption application in minutes via our simple wizard.</p>
+        </div>
+
+        <div class="card card-xl">
+          <span style="font-size: 2rem; font-weight: 700; color: var(--border); display: block; margin-bottom: 1rem;">03</span>
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Meet & Greet</h3>
+          <p style="font-size: 0.875rem; line-height: 1.6;">Schedule a visit with your future companion at the shelter.</p>
+        </div>
+
+        <div class="card card-xl">
+          <span style="font-size: 2rem; font-weight: 700; color: var(--border); display: block; margin-bottom: 1rem;">04</span>
+          <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem;">Take Them Home</h3>
+          <p style="font-size: 0.875rem; line-height: 1.6;">Get your official adoption certificate and welcome your new family member.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vet Services -->
+  <section id="services" style="padding: 4rem 0; background-color: #ffffff;">
+    <div class="container">
+      <div class="grid grid-cols-2 gap-8 items-center">
+        <div>
+          <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); margin-bottom: 0.5rem;">Veterinary Care</p>
+          <h2 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1rem;">
+            Professional care,<br>at your fingertips.
+          </h2>
+          <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 2rem;">
+            Book appointments with 340+ verified veterinarians across Bangladesh. Manage health records, vaccinations, and prescriptions digitally.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="card" style="background-color: var(--background);">
+              <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🩺</span>
+              <h4 style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem;">Health Checkups</h4>
+              <p style="font-size: 0.75rem;">Routine checkups with verified vets.</p>
+            </div>
+
+            <div class="card" style="background-color: var(--background);">
+              <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">💉</span>
+              <h4 style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem;">Vaccination Tracking</h4>
+              <p style="font-size: 0.75rem;">Complete records with renewal alerts.</p>
+            </div>
+
+            <div class="card" style="background-color: var(--background);">
+              <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">📋</span>
+              <h4 style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem;">Digital Prescriptions</h4>
+              <p style="font-size: 0.75rem;">Download and share instantly.</p>
+            </div>
+
+            <div class="card" style="background-color: var(--background);">
+              <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🗓️</span>
+              <h4 style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem;">Easy Booking</h4>
+              <p style="font-size: 0.75rem;">Real-time slots, one click away.</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1770836037793-95bdbf190f71?w=700&h=800&fit=crop&auto=format" alt="Veterinarian examining a dog" style="border-radius: var(--radius-2xl); width: 100%; height: 480px; object-fit: cover;" class="hidden-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section style="padding: 4rem 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 2.5rem;">
+        <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); margin-bottom: 0.5rem;">Stories</p>
+        <h2 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;">Loved by the community</h2>
+      </div>
+
+      <div class="grid grid-cols-3 gap-5">
+        <div class="card card-xl">
+          <div class="flex gap-1 mb-4">
+            <span style="color: #fbbf24;">★★★★★</span>
+          </div>
+          <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #374151;">
+            &ldquo;Adopting through PawSphere was seamless. The whole process took less than a week and the team was incredibly supportive.&rdquo;
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="user-avatar user-avatar-lg">RI</div>
+            <div>
+              <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Rafiqul Islam</p>
+              <p style="font-size: 0.75rem; color: var(--muted-subtle);">Pet Owner · Dhaka</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-xl">
+          <div class="flex gap-1 mb-4">
+            <span style="color: #fbbf24;">★★★★★</span>
+          </div>
+          <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #374151;">
+            &ldquo;Managing listings and applications has never been easier. We've seen a 40% increase in successful adoptions since joining.&rdquo;
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="user-avatar user-avatar-lg">NS</div>
+            <div>
+              <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Nadia Sultana</p>
+              <p style="font-size: 0.75rem; color: var(--muted-subtle);">Shelter Manager · Chittagong</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-xl">
+          <div class="flex gap-1 mb-4">
+            <span style="color: #fbbf24;">★★★★★</span>
+          </div>
+          <p style="font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem; color: #374151;">
+            &ldquo;The prescription editor and medical history tools are exactly what our clinic needed. Patients love the digital records.&rdquo;
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="user-avatar user-avatar-lg">AH</div>
+            <div>
+              <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Dr. Ariful Haque</p>
+              <p style="font-size: 0.75rem; color: var(--muted-subtle);">Veterinarian · Sylhet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="padding: 4rem 0; background-color: var(--primary); color: #ffffff; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: 2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Ready to find your companion?</h2>
+      <p style="color: #bbf7d0; font-size: 0.875rem; margin-bottom: 2rem; max-width: 28rem; margin-left: auto; margin-right: auto;">
+        Join thousands of families who found their perfect pet through PawSphere.
+      </p>
+      <div class="flex items-center justify-center gap-3">
+        <a href="pages/register.html" class="btn btn-lg" style="background-color: #ffffff; color: var(--primary); font-weight: 600;">Get Started Free</a>
+        <a href="pages/browse-pets.html" class="btn btn-lg" style="border: 1px solid rgba(255, 255, 255, 0.4); color: #ffffff;">Browse Pets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: var(--foreground); color: var(--muted-subtle); padding: 3rem 0;">
+    <div class="container">
+      <div class="grid grid-cols-4 gap-8 mb-8" style="grid-template-columns: 1.5fr 1fr 1fr 1.2fr;">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="sidebar-brand-icon">P</div>
+            <span style="font-weight: 600; color: #ffffff;">PawSphere</span>
+          </div>
+          <p style="font-size: 0.75rem; line-height: 1.6; max-width: 200px; margin-bottom: 1rem;">
+            Bangladesh's platform for pet adoption and veterinary care.
+          </p>
+          <div class="flex gap-2">
+            <a href="#" style="width: 28px; height: 28px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" style="width: 28px; height: 28px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" style="width: 28px; height: 28px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p style="color: #ffffff; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Platform</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.75rem;">
+            <li><a href="pages/browse-pets.html" style="color: var(--muted-subtle);">Browse Pets</a></li>
+            <li><a href="#how" style="color: var(--muted-subtle);">How It Works</a></li>
+            <li><a href="#services" style="color: var(--muted-subtle);">Vet Services</a></li>
+            <li><a href="pages/owner/guide.html" style="color: var(--muted-subtle);">Pet Care Guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p style="color: #ffffff; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Roles</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.75rem;">
+            <li><a href="pages/owner/dashboard.html" style="color: var(--muted-subtle);">Pet Owners</a></li>
+            <li><a href="pages/shelter/dashboard.html" style="color: var(--muted-subtle);">Shelters</a></li>
+            <li><a href="pages/vet/dashboard.html" style="color: var(--muted-subtle);">Veterinarians</a></li>
+            <li><a href="pages/admin/dashboard.html" style="color: var(--muted-subtle);">Administrators</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p style="color: #ffffff; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Contact</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.75rem;">
+            <li class="flex items-center gap-2">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              hello@pawsphere.bd
+            </li>
+            <li class="flex items-center gap-2">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +880 1700-000000
+            </li>
+            <li class="flex items-center gap-2">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              Dhaka, Bangladesh
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem;">
+        <p>© 2024 PawSphere. All rights reserved.</p>
+        <div class="flex gap-5">
+          <a href="#" style="color: var(--muted-subtle);">Privacy Policy</a>
+          <a href="#" style="color: var(--muted-subtle);">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
