@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Pets — PawSphere</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body style="background-color: var(--background);">
+
+  <!-- Public Header -->
+  <header style="background: #ffffff; border-bottom: 1px solid var(--border); height: 68px; display: flex; align-items: center; padding: 0 1.5rem; justify-content: space-between;">
+    <a href="../index.html" class="flex items-center gap-2">
+      <div class="sidebar-brand-icon">P</div>
+      <span class="sidebar-brand-text">PawSphere</span>
+    </a>
+    <div class="flex items-center gap-2">
+      <a href="login.html" class="btn btn-outline-neutral btn-sm">Sign In</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Browse Pets</h1>
+        <p class="page-subtitle">Find your perfect companion</p>
+      </div>
+      <a href="login.html" class="btn btn-primary">Sign In to Apply</a>
+    </div>
+
+    <div class="flex gap-6">
+      <!-- Filter Sidebar -->
+      <aside style="width: 13rem; flex-shrink: 0;" class="space-y-4">
+        <div class="card">
+          <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground); margin-bottom: 0.75rem;">Species</p>
+          <div class="space-y-2">
+            <label class="radio-label">
+              <input type="radio" name="species" value="All" checked>
+              <span>All</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="species" value="Dog">
+              <span>Dog</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="species" value="Cat">
+              <span>Cat</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <p style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground); margin-bottom: 0.75rem;">Status</p>
+          <div class="space-y-2">
+            <label class="checkbox-label">
+              <input type="checkbox" checked>
+              <span>Available</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" checked>
+              <span>Reserved</span>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Pets Grid -->
+      <div class="flex-1">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="topbar-search" style="max-width: none; background: #ffffff;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" color="var(--muted-subtle)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" placeholder="Search breed, name...">
+          </div>
+          <span style="font-size: 0.875rem; color: var(--muted-foreground); white-space: nowrap;">6 pets</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Pet 1 -->
+          <a href="pet-detail.html" class="pet-card">
+            <div class="pet-card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=600&h=600&fit=crop&auto=format" alt="Biscuit">
+              <div class="pet-card-heart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="pet-card-body">
+              <div class="flex items-center justify-between mb-1">
+                <h3 style="font-size: 0.9375rem; font-weight: 600;">Biscuit</h3>
+                <span class="badge badge-approved">Available</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.5rem;">Golden Retriever · 8 months</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Playful</span>
+                <span class="pet-tag">Friendly</span>
+                <span class="pet-tag" style="background: var(--background); color: var(--muted-foreground);">Apartment-friendly</span>
+              </div>
+              <div class="flex items-center justify-between mt-3 text-xs" style="color: var(--muted-subtle); font-size: 0.6875rem;">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Mirpur, Dhaka
+                </span>
+                <span class="verification-badge">Verified shelter</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pet 2 -->
+          <a href="pet-detail.html" class="pet-card">
+            <div class="pet-card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?w=600&h=600&fit=crop&auto=format" alt="Luna">
+              <div class="pet-card-heart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="pet-card-body">
+              <div class="flex items-center justify-between mb-1">
+                <h3 style="font-size: 0.9375rem; font-weight: 600;">Luna</h3>
+                <span class="badge badge-approved">Available</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.5rem;">Tabby Cat · 1 year</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Gentle</span>
+                <span class="pet-tag">Calm</span>
+                <span class="pet-tag" style="background: var(--background); color: var(--muted-foreground);">Apartment-friendly</span>
+              </div>
+              <div class="flex items-center justify-between mt-3 text-xs" style="color: var(--muted-subtle); font-size: 0.6875rem;">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Nasirabad, Chittagong
+                </span>
+                <span class="verification-badge">Verified shelter</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pet 3 -->
+          <a href="pet-detail.html" class="pet-card">
+            <div class="pet-card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1602979677071-1781b7f40023?w=600&h=600&fit=crop&auto=format" alt="Oreo">
+              <div class="pet-card-heart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="pet-card-body">
+              <div class="flex items-center justify-between mb-1">
+                <h3 style="font-size: 0.9375rem; font-weight: 600;">Oreo</h3>
+                <span class="badge badge-reserved">Reserved</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.5rem;">Bernese Mountain Dog · 2 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Calm</span>
+                <span class="pet-tag">Loyal</span>
+                <span class="pet-tag" style="background: var(--background); color: var(--muted-foreground);">Apartment-friendly</span>
+              </div>
+              <div class="flex items-center justify-between mt-3 text-xs" style="color: var(--muted-subtle); font-size: 0.6875rem;">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Zindabazar, Sylhet
+                </span>
+                <span class="verification-badge">Verified shelter</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pet 4 -->
+          <a href="pet-detail.html" class="pet-card">
+            <div class="pet-card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=600&h=600&fit=crop&auto=format" alt="Mochi">
+              <div class="pet-card-heart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="pet-card-body">
+              <div class="flex items-center justify-between mb-1">
+                <h3 style="font-size: 0.9375rem; font-weight: 600;">Mochi</h3>
+                <span class="badge badge-approved">Available</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.5rem;">Persian Cat · 6 months</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Curious</span>
+                <span class="pet-tag">Playful</span>
+                <span class="pet-tag" style="background: var(--background); color: var(--muted-foreground);">Apartment-friendly</span>
+              </div>
+              <div class="flex items-center justify-between mt-3 text-xs" style="color: var(--muted-subtle); font-size: 0.6875rem;">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Gulshan, Dhaka
+                </span>
+                <span class="verification-badge">Verified shelter</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pet 5 -->
+          <a href="pet-detail.html" class="pet-card">
+            <div class="pet-card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=600&h=600&fit=crop&auto=format" alt="Bruno">
+              <div class="pet-card-heart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="pet-card-body">
+              <div class="flex items-center justify-between mb-1">
+                <h3 style="font-size: 0.9375rem; font-weight: 600;">Bruno</h3>
+                <span class="badge badge-approved">Available</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.5rem;">German Shepherd · 3 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Protective</span>
+                <span class="pet-tag">Smart</span>
+                <span class="pet-tag" style="background: var(--background); color: var(--muted-foreground);">Apartment-friendly</span>
+              </div>
+              <div class="flex items-center justify-between mt-3 text-xs" style="color: var(--muted-subtle); font-size: 0.6875rem;">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Rajshahi Sadar
+                </span>
+                <span class="verification-badge">Verified shelter</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pet 6 -->
+          <a href="pet-detail.html" class="pet-card">
+            <div class="pet-card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1563460716037-460a3ad24ba9?w=600&h=600&fit=crop&auto=format" alt="Coco">
+              <div class="pet-card-heart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="pet-card-body">
+              <div class="flex items-center justify-between mb-1">
+                <h3 style="font-size: 0.9375rem; font-weight: 600;">Coco</h3>
+                <span class="badge badge-approved">Available</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: 0.5rem;">Beagle · 1.5 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Curious</span>
+                <span class="pet-tag">Merry</span>
+                <span class="pet-tag" style="background: var(--background); color: var(--muted-foreground);">Apartment-friendly</span>
+              </div>
+              <div class="flex items-center justify-between mt-3 text-xs" style="color: var(--muted-subtle); font-size: 0.6875rem;">
+                <span class="flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  Uttara, Dhaka
+                </span>
+                <span class="verification-badge">Verified shelter</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

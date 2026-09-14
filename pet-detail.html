@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biscuit — Golden Retriever — PawSphere</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body style="background-color: var(--background);">
+
+  <!-- Public Header -->
+  <header style="background: #ffffff; border-bottom: 1px solid var(--border); height: 68px; display: flex; align-items: center; padding: 0 1.5rem; justify-content: space-between;">
+    <a href="../index.html" class="flex items-center gap-2">
+      <div class="sidebar-brand-icon">P</div>
+      <span class="sidebar-brand-text">PawSphere</span>
+    </a>
+    <div class="flex items-center gap-2">
+      <a href="login.html" class="btn btn-outline-neutral btn-sm">Sign In</a>
+    </div>
+  </header>
+
+  <main class="container" style="max-width: 56rem; padding-top: 2rem; padding-bottom: 4rem;">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <a href="browse-pets.html">Browse Pets</a>
+      <span>›</span>
+      <span class="current">Biscuit</span>
+    </div>
+
+    <a href="browse-pets.html" class="flex items-center gap-1 mb-6 text-sm" style="color: var(--muted-foreground); font-size: 0.875rem;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+      Back to Browse
+    </a>
+
+    <div class="grid grid-cols-2 gap-8" style="align-items: start;">
+      <!-- Photo Gallery -->
+      <div>
+        <div style="overflow: hidden; border-radius: var(--radius-xl); background: #f1f5f9; height: 320px;">
+          <img src="https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=900&h=700&fit=crop&auto=format" alt="Biscuit" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="grid grid-cols-3 gap-2 mt-2">
+          <div style="overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--primary); height: 80px;">
+            <img src="https://images.unsplash.com/photo-1599692392256-2d084495fe15?w=900&h=700&fit=crop&auto=format" alt="Biscuit 1" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="overflow: hidden; border-radius: var(--radius-md); opacity: 0.7; height: 80px;">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&h=700&fit=crop&auto=format" alt="Biscuit 2" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="overflow: hidden; border-radius: var(--radius-md); opacity: 0.7; height: 80px;">
+            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=900&h=700&fit=crop&auto=format" alt="Biscuit 3" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="badge badge-approved">Available</span>
+          <span class="badge badge-approved" style="background-color: var(--primary-light); color: var(--primary);">Vaccinated</span>
+        </div>
+
+        <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--foreground); margin-bottom: 0.25rem;">Biscuit</h1>
+        <p style="color: var(--muted-foreground); margin-bottom: 1.25rem;">Golden Retriever · 8 months · Male</p>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 gap-3 mb-5">
+          <div class="card" style="padding: 0.75rem; background-color: var(--background);">
+            <p style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-subtle);">Weight</p>
+            <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); margin-top: 0.125rem;">12 kg</p>
+          </div>
+          <div class="card" style="padding: 0.75rem; background-color: var(--background);">
+            <p style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-subtle);">Location</p>
+            <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); margin-top: 0.125rem;">Mirpur, Dhaka</p>
+          </div>
+          <div class="card" style="padding: 0.75rem; background-color: var(--background);">
+            <p style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-subtle);">Shelter</p>
+            <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); margin-top: 0.125rem;">Dhaka Animal Rescue</p>
+          </div>
+          <div class="card" style="padding: 0.75rem; background-color: var(--background);">
+            <p style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted-subtle);">Applications</p>
+            <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); margin-top: 0.125rem;">3 pending</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 mb-5" style="font-size: 0.75rem; color: var(--muted-foreground);">
+          <span class="verification-badge">Verified shelter</span>
+          <span>Dhaka Animal Rescue has confirmed identity and care standards.</span>
+        </div>
+
+        <div class="mb-5">
+          <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground); margin-bottom: 0.5rem;">Personality</p>
+          <div class="flex gap-2" style="flex-wrap: wrap;">
+            <span class="pet-tag" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">Playful</span>
+            <span class="pet-tag" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">Friendly</span>
+            <span class="pet-tag" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">Energetic</span>
+          </div>
+        </div>
+
+        <div class="card mb-6" style="background-color: var(--background); padding: 0.875rem;">
+          <p style="font-size: 0.75rem; font-weight: 600; color: var(--foreground); margin-bottom: 0.25rem;">Health Notes</p>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground);">Healthy, last checkup Dec 2024</p>
+        </div>
+
+        <a href="login.html" class="btn btn-primary btn-block btn-lg">Apply to Adopt Biscuit</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
