@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — PawSphere</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .role-option {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 0.875rem 1rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background-color 0.15s;
+      margin-bottom: 0.5rem;
+    }
+    .role-option:hover {
+      border-color: #d1fae5;
+    }
+    .role-option input[type="radio"] {
+      display: none;
+    }
+    .role-option:has(input[type="radio"]:checked) {
+      border-color: var(--primary);
+      background-color: var(--primary-subtle);
+    }
+  </style>
+</head>
+<body class="auth-shell">
+
+  <div class="auth-card">
+    <a href="../index.html" class="auth-brand">
+      <div class="sidebar-brand-icon">P</div>
+      <span class="sidebar-brand-text">PawSphere</span>
+    </a>
+
+    <div style="display: flex; gap: 0.25rem; margin-bottom: 1.5rem;">
+      <div style="height: 4px; flex: 1; border-radius: var(--radius-full); background-color: var(--primary);"></div>
+      <div style="height: 4px; flex: 1; border-radius: var(--radius-full); background-color: var(--primary);"></div>
+    </div>
+
+    <h1 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.25rem;">Create account</h1>
+    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1.25rem;">Choose your role & fill your details</p>
+
+    <form action="login.html" method="GET">
+      <div style="margin-bottom: 1.25rem;">
+        <label class="role-option">
+          <input type="radio" name="role" value="owner" checked>
+          <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Pet Owner / Adopter</p>
+          <p style="font-size: 0.75rem; color: var(--muted-foreground);">Browse & adopt pets, book vet care</p>
+        </label>
+
+        <label class="role-option">
+          <input type="radio" name="role" value="shelter">
+          <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Animal Shelter</p>
+          <p style="font-size: 0.75rem; color: var(--muted-foreground);">List pets and manage adoptions</p>
+        </label>
+
+        <label class="role-option">
+          <input type="radio" name="role" value="vet">
+          <p style="font-size: 0.875rem; font-weight: 600; color: var(--foreground);">Veterinarian</p>
+          <p style="font-size: 0.75rem; color: var(--muted-foreground);">Manage patients and appointments</p>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Full name" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email address" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Phone number" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" class="form-input" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mb-3">Create Account</button>
+    </form>
+
+    <p style="text-align: center; font-size: 0.875rem; color: var(--muted-foreground); margin-top: 1rem;">
+      Have an account? <a href="login.html" style="color: var(--primary); font-weight: 600;">Sign in</a>
+    </p>
+  </div>
+
+</body>
+</html>

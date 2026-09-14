@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Audit Logs | PawSphere Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+  <div class="portal-layout">
+    <!-- Sidebar -->
+    <aside class="portal-sidebar">
+      <a href="dashboard.html" class="sidebar-brand">
+        <div class="sidebar-brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        </div>
+        <span>PawSphere</span>
+      </a>
+      <span class="portal-role-badge">Platform Administrator</span>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">Administration</div>
+        <a href="dashboard.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="users.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span>User Accounts</span>
+        </a>
+        <a href="verification.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Partner Verification</span>
+        </a>
+        <a href="pet-listings.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309"/></svg>
+          <span>Global Listings</span>
+        </a>
+        <a href="adoptions.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <span>Adoptions Pipeline</span>
+        </a>
+        <a href="analytics.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Platform Analytics</span>
+        </a>
+        <a href="broadcasts.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+          <span>System Broadcasts</span>
+        </a>
+        <a href="moderation.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          <span>Content Moderation</span>
+        </a>
+        <a href="feedback.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>User Feedback</span>
+        </a>
+        <a href="system-logs.html" class="sidebar-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          <span>System Audit Logs</span>
+        </a>
+
+        <div class="sidebar-section-title">System</div>
+        <a href="settings.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>Platform Settings</span>
+        </a>
+        <a href="../../index.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          <span>Exit Portal</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user-avatar" style="background-color: var(--color-slate-800);">MV</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">Marcus Vance</div>
+          <div class="sidebar-user-role">Super Administrator</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="portal-main">
+      <header class="portal-topbar">
+        <div class="portal-breadcrumb">
+          <a href="dashboard.html" style="color: inherit; text-decoration: none;">Administration</a> / <span style="color: var(--color-slate-800); font-weight: 600;">Security & Audit Logs</span>
+        </div>
+        <div class="portal-topbar-actions">
+          <button type="button" class="btn btn-outline btn-sm">Download Raw Logs</button>
+        </div>
+      </header>
+
+      <div class="portal-body">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h1 style="font-size: 26px; font-weight: 800; color: var(--color-slate-900);">System Audit Trail</h1>
+            <p style="color: var(--color-slate-500); font-size: 14px; margin-top: 4px;">Immutable event logs for security auditing, authentication tracking, and administrative actions.</p>
+          </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="card" style="padding: 16px; margin-bottom: 20px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+          <select class="form-select" style="width: auto; min-width: 140px;">
+            <option value="all">All Levels</option>
+            <option value="info">INFO</option>
+            <option value="warn">WARN</option>
+            <option value="security">SECURITY</option>
+            <option value="error">ERROR</option>
+          </select>
+
+          <select class="form-select" style="width: auto; min-width: 140px;">
+            <option value="all">All Subsystems</option>
+            <option value="auth">Auth & Session</option>
+            <option value="vet">Veterinary Registry</option>
+            <option value="adoption">Adoptions</option>
+            <option value="billing">Billing / Fees</option>
+          </select>
+
+          <input type="text" class="form-input" style="flex: 1; min-width: 220px;" placeholder="Filter by keyword, IP address, or user ID...">
+        </div>
+
+        <!-- Logs Table -->
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div class="table-wrap">
+            <table style="font-family: 'Fira Code', monospace; font-size: 13px;">
+              <thead>
+                <tr>
+                  <th>Timestamp (UTC)</th>
+                  <th>Level</th>
+                  <th>Subsystem</th>
+                  <th>IP Address</th>
+                  <th>Event Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="color: var(--color-slate-500);">2026-06-15 09:14:02</td>
+                  <td><span class="badge badge-emerald" style="font-family: 'Inter', sans-serif;">INFO</span></td>
+                  <td>AUTH</td>
+                  <td>192.168.1.42</td>
+                  <td style="color: var(--color-slate-800);">USER_LOGIN_SUCCESS: alex.m@example.com (2FA Verified)</td>
+                </tr>
+
+                <tr>
+                  <td style="color: var(--color-slate-500);">2026-06-15 08:32:15</td>
+                  <td><span class="badge badge-sky" style="font-family: 'Inter', sans-serif;">INFO</span></td>
+                  <td>VET_EHR</td>
+                  <td>10.0.4.19</td>
+                  <td style="color: var(--color-slate-800);">SOAP_NOTE_LOCKED: Patient Bruno (#VET-8821) by Dr. Eleanor Vance</td>
+                </tr>
+
+                <tr>
+                  <td style="color: var(--color-slate-500);">2026-06-15 07:10:44</td>
+                  <td><span class="badge badge-amber" style="font-family: 'Inter', sans-serif;">WARN</span></td>
+                  <td>API_GATEWAY</td>
+                  <td>45.33.32.156</td>
+                  <td style="color: var(--color-amber-700);">RATE_LIMIT_WARNING: /api/v1/search threshold 120req/min triggered</td>
+                </tr>
+
+                <tr>
+                  <td style="color: var(--color-slate-500);">2026-06-14 22:00:00</td>
+                  <td><span class="badge badge-emerald" style="font-family: 'Inter', sans-serif;">INFO</span></td>
+                  <td>BACKUP</td>
+                  <td>127.0.0.1</td>
+                  <td style="color: var(--color-slate-800);">DB_SNAPSHOT_SUCCESS: Encrypted replica stored (Size: 4.8 GB)</td>
+                </tr>
+
+                <tr>
+                  <td style="color: var(--color-slate-500);">2026-06-14 18:24:11</td>
+                  <td><span class="badge badge-violet" style="font-family: 'Inter', sans-serif;">SECURITY</span></td>
+                  <td>ADMIN</td>
+                  <td>192.168.1.1</td>
+                  <td style="color: var(--color-violet-700);">PARTNER_VERIFIED: Happy Tails Animal Sanctuary granted Verified Partner role</td>
+                </tr>
+
+                <tr>
+                  <td style="color: var(--color-slate-500);">2026-06-14 14:05:39</td>
+                  <td><span class="badge badge-emerald" style="font-family: 'Inter', sans-serif;">INFO</span></td>
+                  <td>ADOPTIONS</td>
+                  <td>172.56.21.90</td>
+                  <td style="color: var(--color-slate-800);">CERTIFICATE_ISSUED: Companion Bruno officially registered to Alex Morgan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
