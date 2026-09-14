@@ -55,14 +55,16 @@
 
 /* Tablet & Mobile Screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .dashboard-layout {
+  .dashboard-layout,
+  .portal-layout {
     flex-direction: column;
     height: auto;
     min-height: 100vh;
     overflow-y: auto;
   }
 
-  .sidebar {
+  .sidebar,
+  .portal-sidebar {
     width: 100%;
     height: auto;
     border-right: none;
@@ -76,7 +78,9 @@
 
   .sidebar-brand-text,
   .nav-link span:not(.sidebar-icon),
+  .sidebar-item span:not(.sidebar-icon),
   .sidebar-user .user-info,
+  .sidebar-user-info,
   .signout-link span {
     display: inline;
   }
@@ -88,7 +92,8 @@
     gap: 0.5rem;
   }
 
-  .nav-link {
+  .nav-link,
+  .sidebar-item {
     padding: 0.5rem 0.75rem;
     white-space: nowrap;
   }
@@ -97,7 +102,8 @@
     display: none;
   }
 
-  .topbar {
+  .topbar,
+  .portal-topbar {
     padding: 0 1rem;
   }
 
@@ -105,7 +111,8 @@
     max-width: none;
   }
 
-  .content-area {
+  .content-area,
+  .portal-body {
     padding: 1rem;
   }
 

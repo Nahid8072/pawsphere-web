@@ -78,7 +78,7 @@
       </nav>
 
       <div class="sidebar-footer">
-        <div class="sidebar-user-avatar" style="background-color: var(--color-slate-800);">MV</div>
+        <div class="sidebar-user-avatar">MV</div>
         <div class="sidebar-user-info">
           <div class="sidebar-user-name">Marcus Vance</div>
           <div class="sidebar-user-role">Super Administrator</div>
@@ -90,7 +90,7 @@
     <main class="portal-main">
       <header class="portal-topbar">
         <div class="portal-breadcrumb">
-          <span>Administration</span> / <span style="color: var(--color-slate-800); font-weight: 600;">System Control Center</span>
+          <span>Administration</span> / <span style="font-weight: 600;">System Control Center</span>
         </div>
         <div class="portal-topbar-actions">
           <a href="broadcasts.html" class="btn btn-primary btn-sm">
@@ -103,8 +103,8 @@
       <div class="portal-body">
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
           <div>
-            <h1 style="font-size: 26px; font-weight: 800; color: var(--color-slate-900);">Global Platform Health & Metrics</h1>
-            <p style="color: var(--color-slate-500); font-size: 14px; margin-top: 4px;">Network overview across animal shelters, veterinary clinics, pet owners, and platform activity.</p>
+            <h1 style="font-size: 26px; font-weight: 800; color: var(--foreground);">Global Platform Health & Metrics</h1>
+            <p style="color: var(--muted-foreground); font-size: 14px; margin-top: 4px;">Network overview across animal shelters, veterinary clinics, pet owners, and platform activity.</p>
           </div>
           <div style="display: flex; gap: 8px;">
             <span class="badge badge-emerald" style="font-size: 13px; padding: 6px 12px;">● All Systems Operational</span>
@@ -116,7 +116,7 @@
           <div class="stat-card">
             <div class="stat-header">
               <span class="stat-label">Total Registered Users</span>
-              <div class="stat-icon-wrapper" style="background-color: var(--color-emerald-50); color: var(--color-emerald-600);">
+              <div class="stat-icon-wrapper stat-icon-green">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>
               </div>
             </div>
@@ -130,7 +130,7 @@
           <div class="stat-card">
             <div class="stat-header">
               <span class="stat-label">Verified Partners</span>
-              <div class="stat-icon-wrapper" style="background-color: var(--color-sky-50); color: var(--color-sky-600);">
+              <div class="stat-icon-wrapper stat-icon-blue">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
             </div>
@@ -143,7 +143,7 @@
           <div class="stat-card">
             <div class="stat-header">
               <span class="stat-label">Adoptions Finalized (YTD)</span>
-              <div class="stat-icon-wrapper" style="background-color: var(--color-amber-50); color: var(--color-amber-600);">
+              <div class="stat-icon-wrapper stat-icon-amber">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
               </div>
             </div>
@@ -157,7 +157,7 @@
           <div class="stat-card">
             <div class="stat-header">
               <span class="stat-label">Pending Verifications</span>
-              <div class="stat-icon-wrapper" style="background-color: var(--color-violet-50); color: var(--color-violet-600);">
+              <div class="stat-icon-wrapper stat-icon-purple">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
             </div>
@@ -174,35 +174,35 @@
           <div class="card" style="padding: 24px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
               <div>
-                <h2 style="font-size: 17px; font-weight: 700; color: var(--color-slate-900);">Monthly Active User Registrations</h2>
-                <p style="font-size: 13px; color: var(--color-slate-500);">Growth trajectory over the past 6 months</p>
+                <h2 style="font-size: 17px; font-weight: 700; color: var(--foreground);">Monthly Active User Registrations</h2>
+                <p style="font-size: 13px; color: var(--muted-foreground);">Growth trajectory over the past 6 months</p>
               </div>
-              <div style="font-size: 12px; color: var(--color-slate-500);">2026 Network Data</div>
+              <div style="font-size: 12px; color: var(--muted-subtle);">2026 Network Data</div>
             </div>
 
-            <div class="css-chart-bar-wrap" style="height: 180px;">
+            <div class="css-chart-bar-wrap">
               <div class="css-bar-col">
-                <div class="css-bar" style="height: 45%; background: var(--color-emerald-500);" title="320 users"></div>
+                <div class="css-bar" style="height: 45%;" title="320 users"></div>
                 <span class="css-bar-label">Jan</span>
               </div>
               <div class="css-bar-col">
-                <div class="css-bar" style="height: 55%; background: var(--color-emerald-500);" title="390 users"></div>
+                <div class="css-bar" style="height: 55%;" title="390 users"></div>
                 <span class="css-bar-label">Feb</span>
               </div>
               <div class="css-bar-col">
-                <div class="css-bar" style="height: 65%; background: var(--color-emerald-500);" title="460 users"></div>
+                <div class="css-bar" style="height: 65%;" title="460 users"></div>
                 <span class="css-bar-label">Mar</span>
               </div>
               <div class="css-bar-col">
-                <div class="css-bar" style="height: 72%; background: var(--color-emerald-500);" title="510 users"></div>
+                <div class="css-bar" style="height: 72%;" title="510 users"></div>
                 <span class="css-bar-label">Apr</span>
               </div>
               <div class="css-bar-col">
-                <div class="css-bar" style="height: 85%; background: var(--color-emerald-500);" title="600 users"></div>
+                <div class="css-bar" style="height: 85%;" title="600 users"></div>
                 <span class="css-bar-label">May</span>
               </div>
               <div class="css-bar-col">
-                <div class="css-bar" style="height: 94%; background: var(--color-emerald-500);" title="665 users"></div>
+                <div class="css-bar" style="height: 94%;" title="665 users"></div>
                 <span class="css-bar-label">Jun</span>
               </div>
             </div>
@@ -210,37 +210,37 @@
 
           <!-- User Role Breakdown -->
           <div class="card" style="padding: 24px;">
-            <h2 style="font-size: 17px; font-weight: 700; color: var(--color-slate-900); margin-bottom: 4px;">User Roles Distribution</h2>
-            <p style="font-size: 13px; color: var(--color-slate-500); margin-bottom: 20px;">Active account classifications</p>
+            <h2 style="font-size: 17px; font-weight: 700; color: var(--foreground); margin-bottom: 4px;">User Roles Distribution</h2>
+            <p style="font-size: 13px; color: var(--muted-foreground); margin-bottom: 20px;">Active account classifications</p>
 
             <div style="display: flex; flex-direction: column; gap: 16px;">
               <div>
                 <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px;">
-                  <span style="font-weight: 600; color: var(--color-slate-700);">Pet Owners & Adopters</span>
-                  <span style="color: var(--color-slate-500);">2,410 (84.7%)</span>
+                  <span style="font-weight: 600; color: var(--foreground);">Pet Owners & Adopters</span>
+                  <span style="color: var(--muted-foreground);">2,410 (84.7%)</span>
                 </div>
-                <div style="height: 8px; background: var(--color-slate-100); border-radius: 9999px; overflow: hidden;">
-                  <div style="width: 84.7%; height: 100%; background: var(--color-emerald-500); border-radius: 9999px;"></div>
-                </div>
-              </div>
-
-              <div>
-                <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px;">
-                  <span style="font-weight: 600; color: var(--color-slate-700);">Shelters & Rescues</span>
-                  <span style="color: var(--color-slate-500);">248 (8.7%)</span>
-                </div>
-                <div style="height: 8px; background: var(--color-slate-100); border-radius: 9999px; overflow: hidden;">
-                  <div style="width: 8.7%; height: 100%; background: var(--color-sky-500); border-radius: 9999px;"></div>
+                <div style="height: 8px; background: var(--muted); border-radius: 9999px; overflow: hidden;">
+                  <div style="width: 84.7%; height: 100%; background: var(--primary); border-radius: 9999px;"></div>
                 </div>
               </div>
 
               <div>
                 <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px;">
-                  <span style="font-weight: 600; color: var(--color-slate-700);">Veterinary Clinics</span>
-                  <span style="color: var(--color-slate-500);">187 (6.6%)</span>
+                  <span style="font-weight: 600; color: var(--foreground);">Shelters & Rescues</span>
+                  <span style="color: var(--muted-foreground);">248 (8.7%)</span>
                 </div>
-                <div style="height: 8px; background: var(--color-slate-100); border-radius: 9999px; overflow: hidden;">
-                  <div style="width: 6.6%; height: 100%; background: var(--color-violet-500); border-radius: 9999px;"></div>
+                <div style="height: 8px; background: var(--muted); border-radius: 9999px; overflow: hidden;">
+                  <div style="width: 8.7%; height: 100%; background: #0284c7; border-radius: 9999px;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px;">
+                  <span style="font-weight: 600; color: var(--foreground);">Veterinary Clinics</span>
+                  <span style="color: var(--muted-foreground);">187 (6.6%)</span>
+                </div>
+                <div style="height: 8px; background: var(--muted); border-radius: 9999px; overflow: hidden;">
+                  <div style="width: 6.6%; height: 100%; background: #9333ea; border-radius: 9999px;"></div>
                 </div>
               </div>
             </div>
@@ -251,14 +251,14 @@
         <div class="card" style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
             <div>
-              <h2 style="font-size: 17px; font-weight: 700; color: var(--color-slate-900);">Pending Verification Requests</h2>
-              <p style="font-size: 13px; color: var(--color-slate-500); margin-top: 2px;">Organizations awaiting license and 501(c)(3) clearance</p>
+              <h2 style="font-size: 17px; font-weight: 700; color: var(--foreground);">Pending Verification Requests</h2>
+              <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 2px;">Organizations awaiting license and clearance</p>
             </div>
             <a href="verification.html" class="btn btn-outline btn-sm">All Verifications</a>
           </div>
 
           <div class="table-wrap">
-            <table>
+            <table class="table">
               <thead>
                 <tr>
                   <th>Organization</th>
@@ -272,8 +272,8 @@
               <tbody>
                 <tr>
                   <td>
-                    <div style="font-weight: 700; color: var(--color-slate-900);">Cascades Wildlife & Pet Rescue</div>
-                    <div style="font-size: 12px; color: var(--color-slate-500);">info@cascadesrescue.org</div>
+                    <div style="font-weight: 700; color: var(--foreground);">Cascades Wildlife & Pet Rescue</div>
+                    <div style="font-size: 12px; color: var(--muted-foreground);">info@cascadesrescue.org</div>
                   </td>
                   <td><span class="badge badge-emerald">Rescue / Shelter</span></td>
                   <td>EIN: 93-7819203</td>
@@ -288,8 +288,8 @@
 
                 <tr>
                   <td>
-                    <div style="font-weight: 700; color: var(--color-slate-900);">Riverfront Animal Hospital</div>
-                    <div style="font-size: 12px; color: var(--color-slate-500);">contact@riverfrontvet.com</div>
+                    <div style="font-weight: 700; color: var(--foreground);">Riverfront Animal Hospital</div>
+                    <div style="font-size: 12px; color: var(--muted-foreground);">contact@riverfrontvet.com</div>
                   </td>
                   <td><span class="badge badge-sky">Veterinary Clinic</span></td>
                   <td>License #OR-VET-9014</td>
@@ -304,8 +304,8 @@
 
                 <tr>
                   <td>
-                    <div style="font-weight: 700; color: var(--color-slate-900);">Golden Years Senior Dog Haven</div>
-                    <div style="font-size: 12px; color: var(--color-slate-500);">haven@goldenyears.org</div>
+                    <div style="font-weight: 700; color: var(--foreground);">Golden Years Senior Dog Haven</div>
+                    <div style="font-size: 12px; color: var(--muted-foreground);">haven@goldenyears.org</div>
                   </td>
                   <td><span class="badge badge-emerald">Rescue / Shelter</span></td>
                   <td>EIN: 88-1928371</td>
