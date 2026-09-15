@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Pet | PawSphere Shelter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+  <div class="portal-layout">
+    <!-- Sidebar -->
+    <aside class="portal-sidebar">
+      <a href="dashboard.html" class="sidebar-brand">
+        <div class="sidebar-brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        </div>
+        <span>PawSphere</span>
+      </a>
+      <span class="portal-role-badge">Shelter & Rescue</span>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title">Navigation</div>
+        <a href="dashboard.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="add-pet.html" class="sidebar-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          <span>Add New Pet</span>
+        </a>
+        <a href="pet-listings.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309"/></svg>
+          <span>Pet Listings</span>
+        </a>
+        <a href="applications.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>Applications</span>
+        </a>
+        <a href="meet-greet.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Meet & Greet</span>
+        </a>
+        <a href="certificates.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <span>Certificates</span>
+        </a>
+        <a href="analytics.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Analytics</span>
+        </a>
+        <a href="messages.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Messages</span>
+        </a>
+
+        <div class="sidebar-section-title">Account</div>
+        <a href="settings.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>Shelter Settings</span>
+        </a>
+        <a href="../../index.html" class="sidebar-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          <span>Exit Portal</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user-avatar">HS</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">Happy Tails Sanctuary</div>
+          <div class="sidebar-user-role">Verified Shelter</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="portal-main">
+      <header class="portal-topbar">
+        <div class="portal-breadcrumb">
+          <a href="dashboard.html" style="color: inherit; text-decoration: none;">Shelter</a> / <span style="color: var(--color-slate-800); font-weight: 600;">Add New Pet Listing</span>
+        </div>
+        <div class="portal-topbar-actions">
+          <a href="pet-listings.html" class="btn btn-outline btn-sm">Cancel</a>
+        </div>
+      </header>
+
+      <div class="portal-body" style="max-width: 900px; margin: 0 auto;">
+        <div style="margin-bottom: 24px;">
+          <h1 style="font-size: 26px; font-weight: 800; color: var(--color-slate-900);">Create Pet Listing</h1>
+          <p style="color: var(--color-slate-500); font-size: 14px; margin-top: 4px;">Enter complete details about the animal to help prospective families find their match.</p>
+        </div>
+
+        <!-- 5-Step Stepper Bar -->
+        <div class="stepper" style="margin-bottom: 32px;">
+          <div class="step-item completed">
+            <div class="step-num">✓</div>
+            <div class="step-title">Basic Info</div>
+          </div>
+          <div class="step-item active">
+            <div class="step-num">2</div>
+            <div class="step-title">Health</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-title">Personality</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-title">Photos</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">5</div>
+            <div class="step-title">Publish</div>
+          </div>
+        </div>
+
+        <form action="pet-listings.html" method="get">
+          <!-- Step 1: Basic Information -->
+          <div class="card" style="padding: 28px; margin-bottom: 24px;">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-slate-900); margin-bottom: 6px;">1. Basic Pet Information</h2>
+            <p style="font-size: 13px; color: var(--color-slate-500); margin-bottom: 20px;">Name, breed, species, and physical attributes.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="pet-name">Pet Name *</label>
+                <input type="text" id="pet-name" class="form-input" placeholder="e.g. Copper" required value="Copper">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="pet-species">Species *</label>
+                <select id="pet-species" class="form-select" required>
+                  <option value="Dog" selected>Dog</option>
+                  <option value="Cat">Cat</option>
+                  <option value="Rabbit">Rabbit</option>
+                  <option value="Bird">Bird</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="pet-breed">Breed *</label>
+                <input type="text" id="pet-breed" class="form-input" placeholder="e.g. Beagle Mix" required value="Beagle Mix">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="pet-gender">Gender *</label>
+                <select id="pet-gender" class="form-select" required>
+                  <option value="Male" selected>Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="pet-age">Age / Life Stage *</label>
+                <input type="text" id="pet-age" class="form-input" placeholder="e.g. 2 years old" required value="2 years old">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="pet-size">Size *</label>
+                <select id="pet-size" class="form-select" required>
+                  <option value="Small">Small (under 20 lbs)</option>
+                  <option value="Medium" selected>Medium (20-50 lbs)</option>
+                  <option value="Large">Large (50+ lbs)</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="grid-column: span 2;">
+                <label class="form-label" for="pet-bio">Biography / Story</label>
+                <textarea id="pet-bio" class="form-textarea" rows="3" placeholder="Tell the pet's journey, quirks, and who they would love living with...">Copper is an energetic, friendly Beagle mix who loves long nature walks, tennis balls, and cuddles on the sofa.</textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Health & Medical -->
+          <div class="card" style="padding: 28px; margin-bottom: 24px;">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-slate-900); margin-bottom: 6px;">2. Health & Veterinary Status</h2>
+            <p style="font-size: 13px; color: var(--color-slate-500); margin-bottom: 20px;">Vaccination, sterilisation, and medical histories.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="vaccine-status">Vaccination Status</label>
+                <select id="vaccine-status" class="form-select">
+                  <option value="Up to date" selected>Fully Up to Date</option>
+                  <option value="In Progress">In Progress (Needs Booster)</option>
+                  <option value="Exempt">Medical Exemption</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="microchip-id">Microchip Number</label>
+                <input type="text" id="microchip-id" class="form-input" placeholder="985 141 002 918 201" value="985 141 002 918 201">
+              </div>
+
+              <div class="form-group" style="grid-column: span 2;">
+                <label class="form-label">Medical Attributes</label>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 6px;">
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox" checked> Spayed / Neutered
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox" checked> Dewormed & Flea Treated
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox"> Special Dietary Needs
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox"> Special Medical Care Required
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Personality & Compatibility -->
+          <div class="card" style="padding: 28px; margin-bottom: 24px;">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-slate-900); margin-bottom: 6px;">3. Personality & Compatibility</h2>
+            <p style="font-size: 13px; color: var(--color-slate-500); margin-bottom: 20px;">Household compatibility and temperament tags.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="energy-lvl">Energy Level</label>
+                <select id="energy-lvl" class="form-select">
+                  <option value="Low">Low - Couch Potato</option>
+                  <option value="Medium">Medium - Regular daily walks</option>
+                  <option value="High" selected>High - Active outdoor companion</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="fee">Adoption Fee ($)</label>
+                <input type="number" id="fee" class="form-input" value="250">
+              </div>
+
+              <div class="form-group" style="grid-column: span 2;">
+                <label class="form-label">Good With</label>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 6px;">
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox" checked> Children
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox" checked> Other Dogs
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox"> Cats & Small Animals
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                    <input type="checkbox" checked> House Trained
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Photo Gallery -->
+          <div class="card" style="padding: 28px; margin-bottom: 24px;">
+            <h2 style="font-size: 18px; font-weight: 700; color: var(--color-slate-900); margin-bottom: 6px;">4. Photos & Media</h2>
+            <p style="font-size: 13px; color: var(--color-slate-500); margin-bottom: 20px;">Upload high quality images to increase adoption inquiries.</p>
+
+            <div style="border: 2px dashed var(--color-slate-200); border-radius: var(--radius-lg); padding: 36px 20px; text-align: center; background: var(--color-slate-50); cursor: pointer; margin-bottom: 16px;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-slate-400)" stroke-width="1.5" style="margin: 0 auto 12px;"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+              <div style="font-weight: 600; color: var(--color-slate-700); margin-bottom: 4px;">Click or drag images here to upload</div>
+              <div style="font-size: 12px; color: var(--color-slate-400);">PNG, JPG, or WEBP up to 10MB each</div>
+            </div>
+
+            <div style="display: flex; gap: 12px;">
+              <div style="position: relative; width: 80px; height: 80px; border-radius: 8px; overflow: hidden; border: 2px solid var(--color-emerald-500);">
+                <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=160&auto=format&fit=crop&q=80" style="width: 100%; height: 100%; object-fit: cover;" alt="Primary Preview">
+                <span style="position: absolute; bottom: 2px; left: 2px; background: rgba(0,0,0,0.6); color: white; font-size: 9px; padding: 2px 4px; border-radius: 3px;">Primary</span>
+              </div>
+              <div style="width: 80px; height: 80px; border-radius: 8px; overflow: hidden; border: 1px solid var(--color-slate-200);">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=160&auto=format&fit=crop&q=80" style="width: 100%; height: 100%; object-fit: cover;" alt="Secondary Preview">
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Buttons -->
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px;">
+            <a href="pet-listings.html" class="btn btn-outline">Cancel</a>
+            <div style="display: flex; gap: 12px;">
+              <button type="button" class="btn btn-outline">Save as Draft</button>
+              <button type="submit" class="btn btn-primary">Publish Pet Listing</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
