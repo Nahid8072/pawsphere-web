@@ -848,3 +848,254 @@
   gap: 0.5rem;
   margin-bottom: 1.75rem;
 }
+
+/* ─── Toast Notification System ──────────────────────────────────────── */
+.toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground);
+  min-width: 260px;
+  max-width: 380px;
+  pointer-events: all;
+  animation: toast-in 0.28s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+
+.toast.removing {
+  animation: toast-out 0.22s ease forwards;
+}
+
+.toast-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.toast-success .toast-icon { background: var(--primary-light); color: var(--primary); }
+.toast-error .toast-icon { background: var(--destructive-bg); color: var(--destructive); }
+.toast-info .toast-icon { background: var(--blue-bg); color: var(--blue-text); }
+
+.toast-message { flex: 1; }
+
+.toast-close {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.5;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--foreground);
+}
+.toast-close:hover { opacity: 1; }
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+@keyframes toast-out {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(8px); }
+}
+
+/* ─── Modal Dialog ─────────────────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.modal-backdrop.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-dialog {
+  background: #fff;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.25s cubic-bezier(0.22,1,0.36,1);
+  overflow: hidden;
+}
+.modal-backdrop.open .modal-dialog {
+  transform: translateY(0) scale(1);
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+.modal-close-btn {
+  width: 28px; height: 28px;
+  border-radius: var(--radius-sm);
+  border: none; background: none;
+  cursor: pointer;
+  color: var(--muted-foreground);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.15s;
+}
+.modal-close-btn:hover { background: var(--muted); color: var(--foreground); }
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+.modal-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+
+/* ─── Mobile Sidebar Drawer ────────────────────────────────────────────── */
+.sidebar-toggle {
+  display: none;
+  width: 36px; height: 36px;
+  align-items: center; justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  cursor: pointer;
+  color: var(--foreground);
+}
+
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 998;
+}
+.mobile-nav-overlay.active { display: block; }
+
+@media (max-width: 768px) {
+  .sidebar-toggle { display: flex; }
+
+  .sidebar,
+  .portal-sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.26s cubic-bezier(0.22,1,0.36,1);
+    overflow-y: auto;
+  }
+  .sidebar.open,
+  .portal-sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* ─── Filter Pills (active state) ──────────────────────────────────────── */
+.filter-pills { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.filter-pill {
+  padding: 0.375rem 0.875rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.filter-pill:hover {
+  border-color: var(--primary-border);
+  color: var(--primary);
+  background: var(--primary-subtle);
+}
+.filter-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* ─── Smooth card / row hide for filtering ─────────────────────────────── */
+[data-filterable].hidden-filter {
+  display: none !important;
+}
+
+/* ─── Public Nav Mobile Hamburger ─────────────────────────────────────── */
+.public-nav-toggle {
+  display: none;
+  width: 36px; height: 36px;
+  align-items: center; justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .public-nav-toggle { display: flex; }
+  .public-nav-links {
+    display: none;
+    position: absolute;
+    top: 68px; left: 0; right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 100;
+  }
+  .public-nav-links.open { display: flex; }
+  .public-nav-inner { position: relative; }
+}
